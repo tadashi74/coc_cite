@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clash of Clans</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="./supercell.png">
+    <meta property="og:title" content="이젠 클랜 관리도 효율적으로!"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://kaan.dothome.co.kr"/>
+    <meta property="og:description" content="Made by 칸"/>
+    <meta property="og:image" content="./background.png"/>
+    <meta property="og:image:width" content="2500" />
+    <meta property="og:image:height" content="1149" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+          margin: 0;
+          padding: 0;
+          background-color: #fff;
+        }
+        .search-box{
+          padding: 10px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          height: 30px;
+          background-color: #fff;
+          border: 1px solid #51e3d4;
+          border-radius: 30px;
+          transition: 0.4s;
+          width:30px;
+        }
+        .search-box:hover{
+          box-shadow: 0px 0px .5px 1px #51e3d4;
+          width: 282px;
+        }
+        .search-btn{
+          text-decoration: none;
+          float: right;
+          width: 30px;
+          height: 30px;
+          background-color: #fff;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #51e3d4;
+        }
+        .search-box:hover > .search-btn{
+          background-color: #fff;
+        }
+        .search-txt{
+          display: flex;
+          padding: 0;
+          width: 0px;
+          border:none;
+          background: none;
+          outline: none;
+          float: left;
+          font-size: 1rem;
+          line-height: 30px;
+          transition: .4s;
+        }
+        .search-box:hover > .search-txt{
+          width: 240px;
+          padding: 0 6px;
+        }
+        body, html { 
+          margin: 0;
+          padding: 0;
+          height: 100%;
+        }
+
+        .bgimg {
+          border: 0;
+          padding: 0; 
+          background-image: url('./background.png');
+          min-height: 100%;
+          background-position: center;
+          background-size: cover;
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="bgimg"></div>
+    <form action="clan.php" name="param" method="get">
+    <div class="search-box">
+      <input type="text" class="search-txt" name="param" placeholder="클랜이름 혹은 클랜태그 입력">
+      <a class="search-btn" href="#">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    </form>
+  </body>
+</html>
